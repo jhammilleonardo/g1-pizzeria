@@ -1,0 +1,37 @@
+.blog {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 100px;
+}
+
+.blog-1 {
+    flex-basis: calc(33.3% - 30px);
+}
+
+.blog-1 img {
+    margin-bottom: 20px;
+}
+
+.blog-1 h3 {
+    font-size: 20px;
+    color: #111111;
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+
+.blog-1 p {
+    font-size: 16px;
+    color: #111111;
+}
+
+@media (max-width: 991px) {
+    .blog {
+        padding: 0 30px 30px 30px;
+        flex-direction: column;
+    }
+
+    .blog-1 {
+        margin-bottom: 30px;
+    }
+}

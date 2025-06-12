@@ -1,0 +1,155 @@
+.oferta {
+    padding: 20px 0 0 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.oferta-1 {
+    display: flex;
+    align-items: center;
+    flex-basis: calc(33.3% - 15px);
+    background-color: #f5f5f5;
+    padding: 35px;
+}
+
+.oferta-img {
+    flex-basis: 50%;
+    margin-right: 15px;
+}
+
+.oferta-img img {
+    width: 250px;
+}
+
+.oferta-text {
+    flex-basis: 50%;
+    text-align: center;
+}
+
+.oferta-text h3 {
+    color: #111111;
+    font-family: 'Oswald', sans-serif;
+    font-size: 25px;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+
+.icons {
+    padding: 50px 0 100px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.icon-1 {
+    flex-basis: calc(33.3% - 30px);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 25px;
+    background-color: #f5f5f5;
+}
+
+.icon-text h3 {
+    font-size: 20px;
+    color: #111111;
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+}
+
+.icon-text p {
+    font-size: 16px;
+    color: #111111;
+}
+
+#oferta-modal .modal-content {
+    max-width: 600px;
+    padding: 30px;
+}
+
+#oferta-title {
+    font-family: 'Oswald', sans-serif;
+    font-size: 30px;
+    color: #111111;
+    margin-bottom: 20px;
+}
+
+#oferta-products {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.oferta-product {
+    text-align: center;
+    width: 150px;
+}
+
+.oferta-product img {
+    width: 100px;
+    height: 100px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.oferta-product h4 {
+    font-size: 16px;
+    color: #111111;
+    margin-bottom: 5px;
+}
+
+.oferta-product p {
+    font-size: 14px;
+    color: #555;
+    font-weight: bold;
+}
+
+.oferta-product button {
+    background-color: #222;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.oferta-product button:hover {
+    background-color: #000;
+}
+
+@media (max-width: 991px) {
+    .oferta {
+        padding: 30px 30px 0 30px;
+        flex-direction: column;
+    }
+
+    .oferta-1 {
+        margin-bottom: 30px;
+    }
+
+    .icons {
+        padding: 30px;
+        flex-direction: column;
+    }
+
+    .icon-1 {
+        margin-bottom: 30px;
+    }
+}
+
+@media (max-width: 480px) {
+    #oferta-modal .modal-content {
+        width: 90%;
+        max-width: 400px;
+    }
+
+    .oferta-product {
+        width: 120px;
+    }
+
+    .oferta-product img {
+        width: 80px;
+        height: 80px;
+    }
+}
